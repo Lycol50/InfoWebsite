@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Informatics Philippines</title>
+    <link href="styles.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" type="image/x-icon" href="https://www.informatics.edu.ph/wp-content/uploads/2018/09/cropped-cropped-Logo-192x192-32x32.png">
+</head>
+<body>
+<!-- start navbar -->
+<ul class="navbar">
+    <li><img alt="Informatics"
+             class="logo"
+             height="20%" src="https://media.discordapp.net/attachments/745460782283882628/781770285774012416/logo.png" width="70%"></li>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li class="dropdown">
+        <a class="dropbtn" href="javascript:void(0)">Admission</a>
+        <div class="dropdown-content">
+            <a href="#">Senior High School</a>
+            <a href="#">Bachelor Degrees</a>
+        </div>
+    </li>
+    <li><a href="cu.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+</ul>
+<!-- end navbar -->
+<h1 class="header">Site Announcements</h1>
+<div class="slideshow-container">
+    <div class="an fade">
+        <img src="https://www.informatics.edu.ph/wp-content/uploads/2020/08/Banner-1-min.jpg" style="width:100%">
+    </div>
+    <div class="an fade">
+        <img src="https://www.informatics.edu.ph/wp-content/uploads/2020/09/Website-Banner-SHS_HE-v2-min.jpg"
+             style="width:100%">
+    </div>
+    <div class="an fade">
+        <img src="https://www.informatics.edu.ph/wp-content/uploads/2020/09/Website-Banner-IEL-v2-min.jpg"
+             style="width:100%">
+    </div>
+    <div class="an fade">
+        <img src="https://www.informatics.edu.ph/wp-content/uploads/2020/11/Teachnology-Website-Banner-v1.1-min.jpg"
+             style="width:100%">
+    </div>
+    <br/>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("an");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 30000); // Change image every 1 minute
+        }
+    </script>
+</div>
+<h1 class="header">History</h1>
+<div class="solid-box">
+    <img height="360px" src="Info-Website-09.jpg" style="float: left; margin-right: 20px; position: relative;"
+         width="680px">
+    <h1 style="font-family: Lato;">Informatics at a Glance</h1>
+    <p class="desc">From its humble beginning as a premiere IT training institution founded in 1993, Informatics
+        Philippines has successfully penetrated the academic industry as a premiere educational institution offering
+        degree and diploma programs in the fields of Information and Communication Technology (ICT) and Business
+        Management.</p>
+    <p class="desc">Our Higher Education programs are designed to address the most sought-after skills in the business
+        industry and IT market. Academic experts from educational institutions all over the world have designed and
+        continuously maintain the standards of our curriculum – making sure that it is at par with the global
+        community.</p>
+    <p class="desc">Informatics also offers short IT training courses for corporations and individuals to get high-end
+        skills in information technology, providing professionals with a competitive edge to succeed in the IT industry.
+        Equipped with state-of-art equipment and flexible platforms, Informatics’ committed team of trainers continues
+        to train and upgrade themselves in response to the rapid developments in IT. Informatics is well-poised to
+        provide advanced training for professionals and place them in the forefront of information technology.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<br>
+<div class="footer">
+    <p>Copyright © 2018 • Informatics Holdings Philippines, Inc. • All Rights Reserved</p>
+    <p>Website Recreation by Lyco Tatierra</p>
+</div>
+</body>
+</html>
